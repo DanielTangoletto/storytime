@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⏰ StoryTime - Compteur d'Âge Interactif
 
-## Getting Started
+Une application web moderne qui calcule et affiche le temps écoulé depuis votre date de naissance en temps réel. Construite avec Next.js, React et TypeScript.
 
-First, run the development server:
+## ✨ Fonctionnalités
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Compteur en temps réel** : Affichage live des années, mois, semaines, jours, heures, minutes et secondes
+- **Interface interactive** : Sélecteur de date personnalisable
+- **Design moderne** : Animations CSS et champ d'étoiles animé
+- **Responsive** : Optimisé pour tous les appareils
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Technologies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js 15, React 19, TypeScript
+- Tailwind CSS 4
+- Turbopack pour le développement
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Composants
 
-## Learn More
+- **AgeCounter** : Composant principal avec calcul automatique et mise à jour en temps réel
+- **CircularTimerUnit** : Affichage circulaire de chaque unité de temps
+- **StarField** : Effet de champ d'étoiles en arrière-plan
+- **DatePicker** : Interface de sélection de date de naissance
 
-To learn more about Next.js, take a look at the following resources:
+## 🎯 Utilisation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. L'application démarre avec une date de naissance prédéfinie
+2. Cliquez sur le bouton en bas à droite pour modifier votre date
+3. Observez le temps qui défile en temps réel
+4. L'interface s'adapte automatiquement à votre écran
