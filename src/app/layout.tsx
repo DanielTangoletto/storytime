@@ -11,6 +11,15 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Storytime, le temps qui défile",
   description: "Calcul d'âge en temps réel.",
+  manifest: "/manifest.json",
+  icons: {
+    icon: [
+      { url: "/time.png", type: "image/png" },
+      { url: "/favicon.ico", type: "image/x-icon" },
+    ],
+    shortcut: "/time.png",
+    apple: "/time.png",
+  },
 };
 
 export default function RootLayout({
@@ -20,9 +29,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      <head>
-        <link rel="icon" href="/time.png" type="image/png" />
-      </head>
       <body className={`${poppins.variable} antialiased h-screen flex flex-col`}>{children}</body>
     </html>
   );
