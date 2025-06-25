@@ -20,6 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="icon" href="/time.png" type="image/png" />
+      </head>
       <body className={`${poppins.variable} antialiased h-screen flex flex-col`}>{children}</body>
     </html>
   );

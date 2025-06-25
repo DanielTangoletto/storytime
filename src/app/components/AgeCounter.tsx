@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useEffect, useState, useMemo, useRef } from "react";
-import StarField from "./StarField";
 import CircularTimerUnit from "./CircularTimerUnit";
 import DatePicker from "./DatePicker";
 
@@ -137,8 +136,7 @@ const AgeCounter: React.FC = () => {
   if (!now) {
     return (
       <div className="min-h-screen bg-gradient-animated flex flex-col items-center justify-center p-4 relative">
-        <StarField />
-        <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+        <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
         <div className="relative z-10 flex flex-col items-center max-w-4xl mx-auto">
           <h1 className="text-5xl sm:text-7xl font-extrabold mb-2 text-center pulse-text gradient-text">
             Le temps défile..
@@ -153,8 +151,7 @@ const AgeCounter: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-animated flex flex-col items-center justify-center p-4 relative">
-      <StarField />
-      <div className="absolute inset-0 bg-black opacity-30 z-0"></div>
+      <div className="absolute inset-0 bg-black opacity-20 z-0"></div>
 
       {/* Date et heure en haut à gauche */}
       <div className="absolute top-6 left-6 z-20 text-left hidden sm:block">
@@ -207,11 +204,15 @@ const AgeCounter: React.FC = () => {
           </svg>
         </button>
 
-        <DatePicker
-          onDateChange={handleDateChange}
-          isOpen={isDatePickerOpen}
-          onClose={() => setIsDatePickerOpen(false)}
-        />
+        {isDatePickerOpen && (
+          <div className="absolute bottom-full right-0 mb-4">
+            <DatePicker
+              onDateChange={handleDateChange}
+              isOpen={isDatePickerOpen}
+              onClose={() => setIsDatePickerOpen(false)}
+            />
+          </div>
+        )}
       </div>
     </div>
   );
