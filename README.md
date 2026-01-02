@@ -24,7 +24,7 @@ Une application web moderne qui calcule et affiche le temps écoulé depuis votr
 
 ## 🎯 Utilisation
 
-1. L'application démarre avec une date de naissance prédéfinie
-2. Cliquez sur le bouton en bas à droite pour modifier votre date
+1. L'application démarre avec une date prédéfinie
+2. Cliquez sur le bouton en bas à droite pour sélectionner un événement
 3. Observez le temps qui défile en temps réel
 4. L'interface s'adapte automatiquement à votre écran
